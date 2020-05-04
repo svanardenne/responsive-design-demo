@@ -20,6 +20,13 @@ img {
 /** Containers **/
 
 
+/** Layout Styles **/
+
+.portfolio {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 
 /** Media Queries **/
 
@@ -28,7 +35,7 @@ img {
 @media (min-width: 769px) {
     .portfolio,
     .contact {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     }
