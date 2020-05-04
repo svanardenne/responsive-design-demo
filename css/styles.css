@@ -1,0 +1,35 @@
+/** Base styles **/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/** Pseudo-Classes **/
+
+
+
+/** Containers **/
+
+
+
+/** Media Queries **/
+
+
+
+@media (min-width: 769px) {
+    .portfolio,
+    .contact {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    }
+}
