@@ -1,7 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 /** Base styles **/
 
 body {
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    background: #fafafa;
+    line-height: 1.5;
 }
 
 a {
@@ -15,17 +22,60 @@ img {
 
 /** Pseudo-Classes **/
 
+/** Navigation **/
+
+.main-footer {
+    display: inline-block;
+}
+
+
+.footer-nav li,
+.footer-name,
+.footer-nav {
+    display: inline-block;
+}
 
 
 /** Containers **/
 
+.container {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.main-header,
+.main-footer,
+.contact,
+.container {
+    text-align: center;
+}
+
 
 /** Layout Styles **/
+
+.footer-name,
+.footer-nav {
+    width: 40%;
+}
+
+.main-footer {
+    border-top: 1px solid #e8e8e8;
+    display: block;
+}
 
 .portfolio {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+.contact {
+    margin-top: 150px;
+}
+
+
+
+
+/** Floats **/
 
 
 /** Media Queries **/
@@ -37,6 +87,8 @@ img {
     .contact {
     width: 70%;
     margin: 0 auto;
-    text-align: center;
     }
 }
+
+/** Media Query Floats **/
+
