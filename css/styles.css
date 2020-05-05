@@ -1,14 +1,24 @@
+/** Base styles **/
+/****************/
+
+
 * {
     box-sizing: border-box;
 }
-
-/** Base styles **/
 
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
     background: #fafafa;
     line-height: 1.5;
+    color: #3d3d3d;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #3d3d3d;
 }
 
 a {
@@ -19,67 +29,82 @@ img {
     max-width: 100%;
 }
 
-
 /** Pseudo-Classes **/
+
+
+/**Base Layout Styles **/
+/***********************/
+
+
+
 
 /** Navigation **/
 
+.main-nav {
+    padding: 0;
+}
+
+.name,
+.main-nav li {
+    margin: 10px 0;
+}
+
+.main-nav a {
+    display: block;
+    background: #3d3d3d;
+    padding: 10px 0;
+}
+
+
 .main-footer {
-    display: inline-block;
+    margin-top: 100px;
+    border-top: 1px solid #3d3d3d;
 }
 
-
-.footer-nav li,
-.footer-name,
-.footer-nav {
-    display: inline-block;
-}
-
-
-/** Containers **/
-
-.container {
+.footer-name {
+    float: left;
     margin-left: .5em;
+}
+
+.footer-nav {
+    float: right;
     margin-right: .5em;
 }
+.footer-nav li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+/** Layout Containers **/
 
 .main-header,
-.main-footer,
+.feature,
 .contact,
-.container {
+.main-footer {
     text-align: center;
 }
 
-
-/** Layout Styles **/
-
-.footer-name,
-.footer-nav {
-    width: 40%;
-}
-
-.main-footer {
-    border-top: 1px solid #e8e8e8;
-    display: block;
-}
-
-.portfolio {
-    margin-left: 1em;
-    margin-right: 1em;
+.container {
+    padding-left: .5em;
+    padding-right: .5em;
+    text-align: center;
 }
 
 .contact {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 
 
-
-/** Floats **/
-
-
 /** Media Queries **/
-
+/*******************/
 
 
 @media (min-width: 769px) {
