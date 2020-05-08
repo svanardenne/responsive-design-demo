@@ -81,13 +81,30 @@ a {
     left: 0;
 }
 
+.footer-nav {
+    
+}
+
 .footer-nav a {
-    display: none;
     color: #3d3d3d;
 }
 
 .main-footer a {
     color: #3d3d3d;
+}
+
+.footer-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.back {
     position: absolute;
     right: 0;
 }
@@ -177,6 +194,14 @@ a {
         clear: both;
     }
 
+    .footer-nav {
+        display: inline-block;
+    }
+
+    .back {
+        display: none;
+    }
+    
     .clearfix::after {
         content: "";
         clear: both;
